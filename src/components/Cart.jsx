@@ -31,3 +31,4 @@ const Cart = ({selectedCourse,totalCredit,remaning,totalPrice}) => {
 };
 
 export default Cart;
+

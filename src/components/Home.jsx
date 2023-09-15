@@ -28,7 +28,19 @@ const handleSelectCourse = (course) =>{
    return alert('alrady select it')
   }
    else{
+    selectedCourse.forEach(item =>{
+      countCredit = countCredit + item.credit
+      totalPrice = totalPrice + item.price
+    })
+    const totalRemaning = 20 - countCredit;
     
+    if(totalRemaning < 0){
+      return alert('Credit Out of Lemite')
+    }
+    else{
+      setTotalPrice(totalPrice)
+      setTotalCredit(countCredit)
+      setRemaning(totalRemaning)
       setSelectedCourse([...selectedCourse,course])
     }
     
