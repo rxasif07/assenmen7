@@ -7,6 +7,10 @@ const Home = () => {
 
     const [allCourse,setAllcourse] = useState([])
     const [selectedCourse,setSelectedCourse]=useState([])
+    const [remaning,setRemaning]=useState(0)
+    const [totalCredit,setTotalCredit]=useState(0)
+    const [totalPrice,setTotalPrice]=useState(0)
+   
 
     useEffect(()=>{
         fetch('./data.json')
@@ -16,10 +20,22 @@ const Home = () => {
    
 
 const handleSelectCourse = (course) =>{
-   setSelectedCourse([...selectedCourse,course])
+  const isExsist = selectedCourse.find(item=>item.name==course.name)
+  let countCredit= course.credit
+  let totalPrice = course.price
+
+  if(isExsist){
+   return alert('alrady select it')
+  }
+   else{
+    
+      setSelectedCourse([...selectedCourse,course])
+    }
+    
+   }
 }
 
-console.log(selectedCourse)
+// console.log(selectedCourse)
   return (
     <div>
       <h1 className="text-4xl pb-6 font-bold"> Course Registration </h1>
@@ -41,7 +57,7 @@ console.log(selectedCourse)
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title">Name : {course.name} </h2>
+              <h2 className="card-title ">Name : {course.name} </h2>
               <p>It is a long established fact that a reader will be distracted by the readable content.</p>
               <div className="flex gap-10">
                 <h3 className="text-lg  font-semibold">$$ Price : {course.price} $</h3>
@@ -56,7 +72,15 @@ console.log(selectedCourse)
          }
       </div>
 
-          <Cart selectedCourse={selectedCourse}></Cart>
+          <Cart
+           selectedCourse={selectedCourse}
+           remaning={remaning}
+           totalCredit={totalCredit}
+           totalPrice={totalPrice}
+
+
+         
+           ></Cart>
         
           
         </div>

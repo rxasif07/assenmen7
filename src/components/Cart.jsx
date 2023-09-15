@@ -1,6 +1,6 @@
 
 
-const Cart = ({selectedCourse}) => {
+const Cart = ({selectedCourse,totalCredit,remaning,totalPrice}) => {
     
     return (
         <div>
@@ -9,18 +9,18 @@ const Cart = ({selectedCourse}) => {
             
             <div className="">
 
-              <h2 className="text-2xl font-semibold pb-4 text-blue-500">Credit Hour Remaining : 7 hr</h2>
+              <h2 className="text-2xl font-semibold pb-4 text-blue-500">Credit Hour Remaining : {remaning} hr</h2>
               <hr />
-              <h1 className="text-2xl font-extrabold pb-4">Course Name </h1>
+              <h1 className="text-2xl font-extrabold pb-4 my-2">Course Name </h1>
               {
                 selectedCourse.map(course =>(
                     <li>{course.name}</li>
                 ))
               }
               <hr />
-              <h3 className="py-4 font-bold tect-xl"> Total Cridit : 1 hr</h3>
+              <h3 className="py-4 font-bold tect-xl"> Total Cridit : {totalCredit} hr</h3>
               <hr />
-              <h4 className="py-4  font-bold tect-xl">Total Price : 23 $</h4>
+              <h4 className="py-4  font-bold tect-xl">Total Price : {totalPrice} $</h4>
 
 
             </div>

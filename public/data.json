@@ -3,64 +3,64 @@
       {
         "name": "Introduction to C Programming",
         "details": "Learn the basics of game development, including game design principles, programming, and graphics.",
-        "price": "49",
-        "credit": "3",
+        "price": 49,
+        "credit": 3,
         "img": "https://i.ibb.co/ZTkPBcF/Rectangle-2.png"
       },
       {
         "name": "Introduction to Algorithms",
         "details": "Master Unity, one of the most popular game development platforms, and create your own games.",
-        "price": "79",
-        "credit": "4",
+        "price": 79,
+        "credit": 4,
         "img": "https://i.ibb.co/T4838Ht/Rectangle-2-1.png"
       },
       {
         "name": "Introduction to C++ for DSA",
         "details": "Learn how to create realistic 3D characters for games using industry-standard software.",
-        "price": "69",
-        "credit": "3",
+        "price": 69,
+        "credit": 3,
         "img": "https://i.ibb.co/kH5n9x5/Rectangle-2-2.png"
       },
       {
         "name": "Basic Data Structures",
         "details": "Explore the world of game audio, sound design, and music composition for games.",
-        "price": "59",
-        "credit": "3",
+        "price": 59,
+        "credit": 3,
         "img": "https://i.ibb.co/858rSQ7/Rectangle-3.png"
       },
       {
         "name": "Introduction to OOP Python",
         "details": "Create mobile games using Unreal Engine, a powerful game development tool.",
-        "price": "89",
-        "credit": "4",
+        "price": 89,
+        "credit": 4,
         "img": "https://i.ibb.co/7XStrF6/Rectangle-2-3.png"
       },
       {
         "name": "Software Engineering",
         "details": "Become a game tester and learn the skills needed to ensure game quality.",
-        "price": "49",
-        "credit": "3",
+        "price": 49,
+        "credit": 3,
         "img": "https://i.ibb.co/fn001XZ/Rectangle-2-4.png"
       },
       {
         "name": "AWS, Cloud Computing",
         "details": "Discover marketing and monetization strategies for indie game developers.",
-        "price": "69",
-        "credit": "3",
+        "price": 69,
+        "credit": 3,
         "img": "https://i.ibb.co/jTy07RK/Rectangle-3-1.png"
       },
       {
         "name": "Database (MySQL)",
         "details": "Learn how to create immersive VR games and experiences for various platforms.",
-        "price": "99",
-        "credit": "5",
+        "price": 99,
+        "credit": 5,
         "img": "https://i.ibb.co/x8LVR26/Rectangle-2-5.png"
       },
       {
         "name": "Problem-Solving Part",
         "details": "Master the art of game design and storytelling to create compelling game narratives.",
-        "price": "59",
-        "credit": "3",
+        "price": 59,
+        "credit": 3,
         "img": "https://i.ibb.co/gFKLknb/Rectangle-2-6.png"
       }
     ]
