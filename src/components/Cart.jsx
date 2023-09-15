@@ -24,7 +24,7 @@ const Cart = ({selectedCourse,totalCredit,remaning,totalPrice}) => {
 
 
             </div>
-          </div>)
+          </div>
           </div>
         </div>
     );

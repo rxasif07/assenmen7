@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import Cart from "./Cart";
+import toast, { Toaster } from "react-hot-toast";
 
 const Home = () => {
 
@@ -25,7 +26,8 @@ const handleSelectCourse = (course) =>{
   let totalPrice = course.price
 
   if(isExsist){
-   return alert('alrady select it')
+  //  return alert('alrady select it')
+  return toast.error('Alrady Select It')
   }
    else{
     selectedCourse.forEach(item =>{
@@ -35,7 +37,8 @@ const handleSelectCourse = (course) =>{
     const totalRemaning = 20 - countCredit;
     
     if(totalRemaning < 0){
-      return alert('Credit Out of Lemite')
+      // return alert('Credit Out of Lemite')
+      return toast.error('Credit out of Lemit')
     }
     else{
       setTotalPrice(totalPrice)
@@ -71,9 +74,9 @@ const handleSelectCourse = (course) =>{
             <div className="card-body items-center text-center">
               <h2 className="card-title ">Name : {course.name} </h2>
               <p>It is a long established fact that a reader will be distracted by the readable content.</p>
-              <div className="flex gap-10">
+              <div className="flex gap-5">
                 <h3 className="text-lg  font-semibold">$$ Price : {course.price} $</h3>
-                <h2 className="text-lg font-semibold">Credit : {course.credit} hr</h2>
+                <h2 className="text-lg inline font-semibold"> Credit : {course.credit} hr</h2>
 
               </div>
               <div className="card-actions">
@@ -89,16 +92,15 @@ const handleSelectCourse = (course) =>{
            remaning={remaning}
            totalCredit={totalCredit}
            totalPrice={totalPrice}
-
-
-         
            ></Cart>
         
           
         </div>
 
 
-        <div></div>
+        <div>
+          <Toaster position="top-center"></Toaster>
+        </div>
       </div>
     </div>
   );
